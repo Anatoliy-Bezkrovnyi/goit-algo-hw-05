@@ -16,8 +16,8 @@ def benchmark(func, text_, pattern_):
     return timeit.timeit(stmt=stmt, setup=setup_code, globals={'text': text_, 'pattern': pattern_}, number=10)
 
 if __name__ == "__main__":
-    text = read_file('article_1.txt')
-    real_pattern = 'пошуку вимагає'
+    text = read_file('article_2.txt')
+    real_pattern = 'отримувати значення функції'
     fake_pattern = 'достобіса'
     
     results = []
@@ -37,8 +37,3 @@ if __name__ == "__main__":
         print(f"{result[0]: <30} | {result[1] : <30} | {result[2] : <20.5f}")
     
 
-       #print(f"{'|Algorythm': <20} | {'Time small data' : <20} | {'Time medium  data' : <20}")
-    #print(f"{'-'*20} | {'-'*20} | {'-'*20}")
-    #print(f"{'|Insertion sort': <20} | {time_small_insertion : <20.5f} | {time_medium_insertion : <20.5f}")
-    #print(f"{'|Merge sort': <20} | {time_small_merge : <20.5f} | {time_medium_merge : <20.5f}")
-    #print(f"{'|Timsort': <20} | {time_small_timsort : <20.5f} | {time_medium_timsort : <20.5f}")

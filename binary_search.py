@@ -27,16 +27,16 @@ def binary_search(arr, x):
         # інакше x присутній на позиції і повертаємо його
         else:
             counter += 1
-            return mid, counter
+            return array[mid], counter
  
     # якщо елемент не знайдений
     return high_boundary, counter
 
 arr = [2, 3, 4, 10, 40, 50, 60, 70, 80, 90, 100]
-x = 35
+x = 45
 result = binary_search(arr, x)
 if result != -1:
-    print(f"Element is present at index \ the closest value, iterations needed for search {result}")
+    print(f"Found or the highest available value and iterations needed for search {result}")
     
 else:
     print("Element is not present in array")
